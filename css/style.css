@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: brown;
+    background: linear-gradient(180deg, #F7C2B4 0%, rgba(247, 194, 180, 0.55) 100%);
 }
 
 .navbar {
@@ -15,10 +15,12 @@ header {
     color: whitesmoke;
 }
 
-.button-page {
+.button-nav {
+    width: 100px;
+    height: 30px;
     background: none;
     border: 0.5px solid white;
-    border-radius: 5px;
+    border-radius: 100px;
     color: aliceblue;
     text-align: center;
 }

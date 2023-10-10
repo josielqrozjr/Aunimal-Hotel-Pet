@@ -1,3 +1,4 @@
+/*
 var catalogoServico = [
     {
         nome: "Lazer", 
@@ -9,11 +10,11 @@ var catalogoServico = [
     },
     {
         nome: "Tosa", 
-        diaria: 510.00
+        diaria: 510
     },
     {
         nome: "Hospedagem", 
-        valor: 10.00
+        valor: 10
     }
 ];
 
@@ -32,3 +33,4 @@ for (var servicos of catalogoServico) {
 
 document.getElementById("container-product").innerHTML += cardServicos;
 }
+*/
