@@ -6,7 +6,4 @@
 
     $conexao = mysqli_connect("localhost:3306", $user, $password, $password);
 
-    
-
-
 ?>
