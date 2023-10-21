@@ -1,9 +1,9 @@
 function cadastrar() {
 
-    var form = document.getElementById('formulario');
-    var dados = new FormData(form);
+    var form_login = document.getElementById('form-login');
+    var dados = new FormData(form_login);
 
-    fetch("php/gravar.php", {
+    fetch("php/analisar.php", {
         method: 'POST',
         body: dados
     })
