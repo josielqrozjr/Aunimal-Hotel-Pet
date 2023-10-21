@@ -101,6 +101,7 @@ body {
     border-radius: 15px;
     border: 1px solid #F0E7D6;
     border: none;
+    outline: none;
 }
 
 .linha {
