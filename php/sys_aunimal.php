@@ -1,6 +1,6 @@
 <?php 
     session_start(); // Iniciar a sessão
-    if((!isset($_SESSION['usuario'])) and (!isset($_SESSION['senha'])))
+    if((!isset($_SESSION['usuario'])) and (!isset($_SESSION['senha']))) // Se não houver usuário e senha não acessará
     {
         unset($_SESSION['usuario']);
         unset($_SESSION['senha']);
