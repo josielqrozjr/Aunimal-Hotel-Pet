@@ -15,6 +15,7 @@ async function login() {
         window.location.href = "php/sys_aunimal.php";
     } else {
         // Se o login falhar
-        window.location.href = "index.html";
+        var mensagemErro = document.getElementById('mensagem-erro');
+        mensagemErro.value = "Credenciais incorretas!";
     }
 }

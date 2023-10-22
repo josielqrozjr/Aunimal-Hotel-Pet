@@ -28,12 +28,13 @@
             <form id="form-login" class="card-login-form">
                 <div class="login-form">
                     <i class="fa-solid fa-user" style="color: #be3300;"></i>
-                    <input type="text" placeholder="Usuário" name="usuario">
+                    <input id="user" type="text" placeholder="Usuário" name="usuario">
                 </div>
                 <div class="login-form">
                     <i class="fa-solid fa-lock" style="color: #be3300;"></i>
-                    <input type="password" placeholder="Senha" name="senha">
+                    <input id="password" type="password" placeholder="Senha" name="senha">
                 </div>
+                <input type="text" id="mensagem-erro" readonly>
                 <button type="button" onclick="login()">Login</button>
             </form>
         </div>

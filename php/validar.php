@@ -28,14 +28,10 @@
             $json  = json_encode(true);
             echo $json;
         }
-
+        mysqli_close($conexao);
     } else 
     {
         $json  = json_encode(false);
         echo $json; 
     }
-
-
-    mysqli_close($conexao);
-
 ?>
