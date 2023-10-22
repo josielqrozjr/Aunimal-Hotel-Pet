@@ -48,6 +48,7 @@ body {
     background: #F0E7D6;
     border-radius: 100px;
     border: none;
+    cursor: pointer;
 }
 
 #section-login-adm {

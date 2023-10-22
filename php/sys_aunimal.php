@@ -7,7 +7,6 @@
         header('Location: ../index.html');
     }
     $logado = $_SESSION['usuario'];
-    echo $logado;
 ?>
 
 <html lang="pt-br">
@@ -26,12 +25,14 @@
         <div class="navbar-button-menu-pesquisa">
             <input class="navbar-pesquisa" type="text" name="barra-pesquisa" placeholder="buscar produto" id="">
             <button class="navbar-button-menu">
-                <img src="../assets/icon_menu.svg" alt="Botão do menu">
+                <a href="logout.php">SAIR</a>
             </button>
         </div>
     </header>
 
-    <h1>BEM VINDO AO SISTEMA!</h1>
+    <?php
+        echo "<h1>BEM VINDO AO SISTEMA, <u>$logado</u>!</h1>";
+    ?>
 
     
 </body>
