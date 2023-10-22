@@ -16,16 +16,23 @@
 
         if (mysqli_num_rows($verificar) < 1) # Verificar consulta no banco de dados, retorna false se não houverem os dados
         {
-            echo 'Não existe!';
-        } else {
-            $_SESSION['usuario'] = $usuario;
+            unset($_SESSION['usuario']); # Excluir registro de usuário e senha caso não exista cadastro no banco de dados
+            unset($_SESSION['senha']);
+            $json  = json_encode(false);
+            echo $json;           
+        } 
+        else 
+        {
+            $_SESSION['usuario'] = $usuario; # Criar variaveis para a sessão
             $_SESSION['senha'] = $senha;
-            header('Location: admin.php');
+            $json  = json_encode(true);
+            echo $json;
         }
 
     } else 
     {
-        echo 'Erro ou campos vazios!';
+        $json  = json_encode(false);
+        echo $json; 
     }
 
 
