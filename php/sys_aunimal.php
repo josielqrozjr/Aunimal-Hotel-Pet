@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style-admin.css">
     <link rel="stylesheet" href="../css/fontawesome-free-web/css/all.css">
-    <script defer src="js/admin.js"></script>
+    <script defer src="../js/admin.js"></script>
     <title>Aunimal | Sistema</title>
 </head>
 <body>
