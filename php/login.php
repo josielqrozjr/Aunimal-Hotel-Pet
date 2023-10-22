@@ -4,10 +4,11 @@
     $usuario = $_POST["usuario"];
     $senha = $_POST["senha"];
 
-    if (isset($_POST["button"]) && !empty($usuario) && !empty($senha)) # Verificar se os campos estão vazios
+    if (!empty($usuario) && !empty($senha)) # Verificar se os campos estão vazios
     {
+ 
         // Acessar o banco dados
-        include_once("php/config_db.php");
+        include_once("config_db.php");
         
         $query = "SELECT * FROM administrador WHERE usuario = '$usuario' AND senha = '$senha'";
         
@@ -16,7 +17,7 @@
 
     } else 
     {
-        echo "Erro!";
+        echo "Erro ou campos vazios!";
     }
 
 
