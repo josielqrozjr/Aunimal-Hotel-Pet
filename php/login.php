@@ -1,8 +1,8 @@
 <?php 
 
 
-    $usuario = $_POST["usuario"];
-    $senha = $_POST["senha"];
+    $usuario = $_POST['usuario'];
+    $senha = $_POST['senha'];
 
     if (!empty($usuario) && !empty($senha)) # Verificar se os campos estão vazios
     {
@@ -12,17 +12,18 @@
         
         $query = "SELECT * FROM administrador WHERE usuario = '$usuario' AND senha = '$senha'";
         
-        mysqli_query($conexao, $query);
+        $verificar = mysqli_query($conexao, $query);
 
+        $resultado = mysqli_fetch_assoc($verificar);
+
+        echo $resultado['senha'];
 
     } else 
     {
-        echo "Erro ou campos vazios!";
+        echo 'Erro ou campos vazios!';
     }
 
 
-    
-
-
+    mysqli_close($conexao);
 
 ?>
