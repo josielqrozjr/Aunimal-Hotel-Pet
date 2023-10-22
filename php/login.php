@@ -20,7 +20,7 @@
         } else {
             $_SESSION['usuario'] = $usuario;
             $_SESSION['senha'] = $senha;
-            header('Location: index.html');
+            header('Location: admin.php');
         }
 
     } else 
