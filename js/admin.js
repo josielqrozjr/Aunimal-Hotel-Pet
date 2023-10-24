@@ -1,3 +1,12 @@
+
+window.onload = function(){
+    fetch("php/get.php", {
+
+    });
+
+
+}
+
 async function login() {
 
     var form_login = document.getElementById('form-login');
