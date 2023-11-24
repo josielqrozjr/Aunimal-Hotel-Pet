@@ -10,7 +10,7 @@ window.onload = function(){
 async function login() {
 
     var form_login = document.getElementById('form-login');
-    var dados = new FormData(form_login);
+    var dados = new FormData(form_login, form_cadastro);
 
     var promisse = await fetch("php/validar.php", {
         method: 'POST',
